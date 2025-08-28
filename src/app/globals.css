@@ -1,8 +1,5 @@
 @import "tailwindcss";
-@import "tailwindcss/preflight";
-@import "tailwindcss/utilities";
 
-/* É AQUI que a sua customização v4 deve ficar! */
 @theme {
   --grid-template-columns-app: minmax(18rem, 20rem) 1fr;
   --max-width-app: 700px;
