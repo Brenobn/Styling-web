@@ -1,5 +1,6 @@
 import { SettingsTabs } from '@/components/SettingsTabs'
 import * as Input from '@/components/Input'
+import * as FileInput from '@/components/Form/FileInput'
 import { Mail } from 'lucide-react'
 
 export default function Home() {
@@ -85,7 +86,12 @@ export default function Home() {
                 This will be displayed on your profile.
               </span>
             </label>
-            <div className="flex items-start gap-5"></div>
+
+            <FileInput.Root className="flex items-start gap-5">
+              <FileInput.ImagePreview />
+              <FileInput.Trigger />
+              <FileInput.Control />
+            </FileInput.Root>
           </div>
 
           <div className="grid-cols-form grid gap-3 pb-5">
@@ -137,7 +143,10 @@ export default function Home() {
                 Share a few snippets of your work.
               </span>
             </label>
-            <div></div>
+            <FileInput.Root>
+              <FileInput.Trigger />
+              <FileInput.Control multiple />
+            </FileInput.Root>
           </div>
 
           <div className="flex items-center justify-end gap-2">
