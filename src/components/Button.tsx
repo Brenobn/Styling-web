@@ -12,7 +12,8 @@ const button = tv({
     variant: {
       primary: 'bg-violet-600 text-white hover:bg-violet-700',
       secondary: 'border border-zinc-300 text-zinc-700 hover:bg-zinc-50',
-      tertiary: 'rounded-md px-2 hover:bg-zinc-50 shadow-none text-zinc-500',
+      tertiary:
+        'rounded-md px-2 dark:hover:bg-zinc-800 hover:bg-zinc-50 shadow-none text-zinc-500 dark:text-zinc-400',
     },
   },
 
